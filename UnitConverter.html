@@ -5,30 +5,21 @@
   </head>
   <body>
     <form>
-        From
-        <input type="text" id="value" name="value"> 
-        <select id="fromUnit" name="fromUnit">
-          <option value="mm">Millimeters</option>
-          <option value="cm">Centimeters</option>
-          <option value="m">Meters</option>
-          <option value="km">Kilometers</option>
-          <option value="in">Inches</option>
-          <option value="ft">Feet</option>
-          <option value="yd">Yards</option>
-          <option value="mi">Miles</option>
-        </select>
-        To
-        <select id="toUnit" name="toUnit">
-          <option value="mm">Millimeters</option>
-          <option value="cm">Centimeters</option>
-          <option value="m">Meters</option>
-          <option value="km">Kilometers</option>
-          <option value="in">Inches</option>
-          <option value="ft">Feet</option>
-          <option value="yd">Yards</option>
-          <option value="mi">Miles</option>
-        </select>
-        <input type="button" value="Convert" id="convertButton">
+      <label>
+        Unit Domain
+        <select id="unitDomain" name="unitDomain"></select>
+        <input type="button" value="Select" id="domainButton">
+      </label>
+      <br><br>
+      <fieldset>
+        <legend id="domainLegend" name="domainLegend">Choose a unit domain</legend>
+          From
+          <input type="number" id="value" name="value"> 
+          <select id="fromUnit" name="fromUnit"></select>
+          To
+          <select id="toUnit" name="toUnit"></select>
+          <input type="button" value="Convert" id="convertButton">
+      </fieldset>
     </form>
     <div id="result">
       
