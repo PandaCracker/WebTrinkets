@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <form>
+        From
+        <input type="text" id="value" name="value"> 
+        <select id="fromUnit" name="fromUnit">
+          <option value="mm">Millimeters</option>
+          <option value="cm">Centimeters</option>
+          <option value="m">Meters</option>
+          <option value="km">Kilometers</option>
+          <option value="in">Inches</option>
+          <option value="ft">Feet</option>
+          <option value="yd">Yards</option>
+          <option value="mi">Miles</option>
+        </select>
+        To
+        <select id="toUnit" name="toUnit">
+          <option value="mm">Millimeters</option>
+          <option value="cm">Centimeters</option>
+          <option value="m">Meters</option>
+          <option value="km">Kilometers</option>
+          <option value="in">Inches</option>
+          <option value="ft">Feet</option>
+          <option value="yd">Yards</option>
+          <option value="mi">Miles</option>
+        </select>
+        <input type="button" value="Convert" id="convertButton">
+    </form>
+    <div id="result">
+      
+    </div>
+    <script src="unitConverter.js"></script>
+  </body>
+</html>
